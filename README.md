@@ -59,5 +59,18 @@ postgres
 .env
 DATABASE_URL="postgresql://postgres:[pass]@db.gpbajuiuwkiidknghjxv.supabase.co:5432/postgres"
 
-マイグレ
+マイグレ 
 npx prisma migrate dev --name init
+
+クライアント、インスコ
+npm i @prisma/client
+
+--
+タイムゾーン変更
+
+alter database postgres
+set timezone to 'Asia/Tokyo';
+SHOW TIME ZONE;
+
+データベース単位で変更できない？？
+---
