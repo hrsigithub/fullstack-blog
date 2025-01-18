@@ -35,7 +35,12 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 ---------
+
+参考
 https://www.youtube.com/watch?v=wF3g76z14Gs&t=630s
+
+https://github.com/Shin-sibainu/next.js13-fullstack-blog
+
 
 Prisma
 npm i prisma --save-dev
