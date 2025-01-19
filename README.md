@@ -79,3 +79,6 @@ SHOW TIME ZONE;
 
 データベース単位で変更できない？？
 ---
+https://github.com/timolins/react-hot-toast
+
+npm install react-hot-toast

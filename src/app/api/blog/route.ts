@@ -32,6 +32,7 @@ export const GET = async () => {
 // ブログ投稿
 export const POST = async (req: Request) => {
   try {
+    console.log("post");
     const { title, description } = await req.json();
 
     main();
