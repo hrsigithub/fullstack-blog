@@ -7,9 +7,9 @@ const fetchAllBlogs = async () => {
       cache: "no-store", // 更新が頻繁なのでSSR
     });
 
-    // if (!res.ok) {
-    //   throw new Error(`HTTP error! status: ${res.status}`);
-    // }
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
 
     const data = await res.json();
 

@@ -18,7 +18,11 @@ export const GET = async () => {
   try {
     main();
 
-    const posts = await prisma.post.findMany();
+    const posts = await prisma.post.findMany({
+      orderBy: {
+        id: "asc", // 'asc'は昇順、'desc'は降順
+      },
+    });
 
     return NextResponse.json({ message: "成功", posts }, { status: 200 });
   } catch (e) {

@@ -34,14 +34,14 @@ const PostBlog = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault(); // リロードを防ぐ
 
-    toast.loading("POSTting....");
+    toast.loading("POSTting....", { id: "1" });
 
     // console.log(titleRef.current?.value);
     // console.log(descriptionRef.current?.value);
 
     await postBlog(titleRef.current?.value, descriptionRef.current?.value);
 
-    toast.success("POSTting....success");
+    toast.success("POSTting....success", { id: "1" });
 
     router.push("/"); // ホームへ戻る。
     router.refresh();

@@ -82,3 +82,11 @@ SHOW TIME ZONE;
 https://github.com/timolins/react-hot-toast
 
 npm install react-hot-toast
+
+「課題」
+
+優先度⭐️
+react-hot-toastの詳細動作学習予定
+
+優先度⭐️⭐️⭐️
+最新版のNext.jsでuseEffectを再学習予定
