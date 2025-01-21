@@ -20,7 +20,7 @@ export const GET = async () => {
 
     const posts = await prisma.post.findMany({
       orderBy: {
-        id: "asc", // 'asc'は昇順、'desc'は降順
+        id: "desc", // 'asc'は昇順、'desc'は降順
       },
     });
 
